@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Steampunked</string>
+    <string name="start_button">Start Game</string>
+    <string name="turnInfo">User1\'s Turn</string>
+    <string name="winningPlayer">Player \" \" has punked you</string>
+    <string name="surrender_button">Surrender</string>
+    <string name="PlayerOneName">Player One Name</string>
+    <string name="PlayerTwoName">Player Two Name</string>
+    <string name="initial_time">1:00</string>
+    <string name="installButton">Install</string>
+    <string name="restart">Restart</string>
+    <string name="image_description">Picture of the steampunk</string>
+    <string name="gameView_description">The game playing area</string>
+    <string name="discardButton">discard</string>
+    <string name="openValveButton">Open Valve</string>
+    <string name="howToPlay">How To Play</string>
+    <string name="howToPlayMessage">Drag and install pipes to connect your start pipe to the end pipe. Press install to install button. Discard to refresh for one random pipe. Open valve when you are done. Surrender button surrender</string>
+    <string name="playerNameError">Error: Player name is incorrect</string>
+    <string name="PipeError">Error: Invalid pipe connection.</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/clockView"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="false"
+        android:gravity="center"
+        android:text="@string/initial_time"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/turnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/installButton"
+        android:layout_alignStart="@id/installButton"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="@string/turnInfo"
+        android:textSize="24sp" />
+
+    <view
+        android:id="@+id/gameView"
+        class="edu.msu.singhk12.steampunked.GameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerVertical="false"
+        android:layout_toStartOf="@id/clockView"
+        android:contentDescription="@string/gameView_description"></view>
+
+    <Button
+        android:id="@+id/installButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonOpenValve"
+        android:layout_alignBaseline="@id/discardButton"
+        android:layout_alignStart="@id/buttonOpenValve"
+        android:layout_alignEnd="@id/buttonOpenValve"
+        android:onClick="Install"
+        android:text="@string/installButton"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/discardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/endTester"
+        android:layout_alignStart="@id/endTester"
+        android:layout_alignEnd="@id/endTester"
+        android:onClick="onDiscard"
+        android:text="@string/discardButton" />
+
+    <Button
+        android:id="@+id/buttonOpenValve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/endTester"
+        android:layout_alignTop="@id/endTester"
+        android:layout_alignBottom="@id/endTester"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@id/endTester"
+        android:onClick="onOpenValve"
+        android:text="@string/openValveButton" />
+
+    <Button
+        android:id="@+id/endTester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onGameSurrender"
+        android:text="@string/surrender_button"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <view
+        android:id="@+id/clockView"
+        class="edu.msu.singhk12.steampunked.ClockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/turnInfo"
+        android:layout_below="@id/timer_text"
+        android:layout_alignStart="@id/turnInfo"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+
+</RelativeLayout>
