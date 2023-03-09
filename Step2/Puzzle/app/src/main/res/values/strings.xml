@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Puzzle sharinic</string>
+    <string name="start_puzzle">Start Puzzle</string>
+    <string name="welcome">Welcome to Sharinic\'s Puzzle</string>
+    <string name="solved_puzzle">Picture of the solved puzzle</string>
+</resources>
