@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/matchGrid"
+        android:layout_width="match_parent"
+        android:layout_height="717dp"
+        android:numColumns="4" />
+
+    <Button
+        android:id="@+id/peekButton"
+        android:layout_width="155dp"
+        android:layout_height="92dp"
+        android:layout_alignBottom="@id/matchGrid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-6dp"
+        android:onClick="Peek"
+        android:text="@string/peek" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:layout_alignBottom="@id/matchGrid"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="-4dp"
+        android:onClick="Reset"
+        android:text="@string/reset" />
+
+</RelativeLayout>

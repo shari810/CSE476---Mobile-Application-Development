@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Examsharinic</string>
+    <string name="peek">Peek</string>
+    <string name="reset">Reset</string>
+</resources>
