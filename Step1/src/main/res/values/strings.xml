@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Step1</string>
+    <string name="greeting">\"Welcome to Nick\'s Program\"</string>
+    <string name="button_text">DON\'T PRESS THIS BUTTON</string>
+</resources>
